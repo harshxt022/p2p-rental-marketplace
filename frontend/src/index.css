@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f5;
+    color: #1f1b17;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.rdp-root {
+  --rdp-accent-color: #f97316;
+  --rdp-accent-background-color: #ffdbca;
+  --rdp-range_middle-background-color: #ffdbca;
+  --rdp-range_middle-color: #341100;
+  --rdp-selected-border: 2px solid #f97316;
+  --rdp-today-color: #9d4300;
+}
